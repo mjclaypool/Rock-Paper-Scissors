@@ -28,16 +28,19 @@ export default function Rules() {
             </h2>
             <img
               src={closeIcon}
+              alt="Close button."
               onClick={() => setModalOpen(false)}
               className="hidden lg:inline p-4 cursor-pointer"
             />
           </div>
           <img
             src={rules}
+            alt="Rules diagram, detailing that paper beats rock, rock beats scissors, and scissors beats paper."
             className="lg:pb-4"
           />
           <img
             src={closeIcon}
+            alt="Close button."
             onClick={() => setModalOpen(false)}
             className="lg:hidden p-4 cursor-pointer"
           />

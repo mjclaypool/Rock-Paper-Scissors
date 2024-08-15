@@ -20,7 +20,7 @@ export default function GameBoard() {
   }
 
   return (
-    <div className="relative mx-auto">
+    <main className="relative mx-auto">
       {showResults ? <GameResults playAgain={setPlayAgain} /> :
         <motion.div
           className="w-[200px] lg:w-[300px]"
@@ -52,6 +52,6 @@ export default function GameBoard() {
           </div>
         </motion.div>
       }
-    </div>
+    </main>
   )
 }
