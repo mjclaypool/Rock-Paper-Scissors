@@ -12,7 +12,8 @@ export default function Rules() {
         id="rules-button"
         type='button'
         onClick={() => setModalOpen(true)}
-        className="lg:self-end font-barlow font-bold px-8 lg:px-12 py-2 lg:my-4 mb-12 text-stone-300 border-2 border-stone-300 rounded-md tracking-wider"
+        className="lg:self-end font-barlow font-bold px-8 lg:px-12 py-2 my-6 lg:mb-12 rounded-md tracking-wider text-stone-300 border-2 border-stone-300
+          hover:text-cyan-300 hover:border-cyan-300"
       >
         RULES
       </button>

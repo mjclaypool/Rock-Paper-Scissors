@@ -5,7 +5,6 @@ const GameContext = createContext({
   score: '',
   result: '',
   housePick: '',
-  playAgain: () => {},
   checkForWin: (pick) => {},
 });
 
@@ -17,24 +16,15 @@ export function GameContextProvider({children}) {
   function getComputerPick() {
     let computerPick = Math.floor(Math.random() * 3);
     if (computerPick == 0) {
-      console.log("CPU chooses rock");
       setCompPick('rock');
       return "rock";
     } else if (computerPick == 1) {
-      console.log("CPU chooses paper");
       setCompPick('paper');
       return "paper";
     } else if (computerPick == 2) {
-      console.log("CPU chooses scissors");
       setCompPick('scissors');
       return "scissors";
-    } else {
-      console.log("Something isn't right...")
     }
-  }
-
-  function playAgain() {
-    setPlayerScore(20);
   }
 
   function checkForWin(pick) {
@@ -81,7 +71,6 @@ export function GameContextProvider({children}) {
     score: playerScore,
     result: playerResult,
     housePick: compPick,
-    playAgain,
     checkForWin,
   };
 
