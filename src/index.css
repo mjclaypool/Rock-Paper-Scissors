@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#game-background {
+  background-image: url(./assets/bg-triangle.svg);
+  background-repeat: no-repeat;
+}
